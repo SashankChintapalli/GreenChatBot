@@ -1,0 +1,91 @@
+{
+  "id": "cf0dbb76-a686-4777-a47e-eace0e2021c2",
+  "name": "greenhouseinfo",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Great question! 🌍 The greenhouse effect is a natural process that keeps Earth warm enough to support life. It happens when certain gases in the atmosphere trap heat from the sun—just like a greenhouse traps warmth for plants! 🪴\n\n👉 How does it work?\n\n☀️ The sun sends energy (sunlight) to Earth.\n\n🌎 Earth absorbs some of this heat and reflects the rest back.\n\n🌫️ Greenhouse gases like CO₂ (carbon dioxide), CH₄ (methane), and water vapor trap some of the heat in the atmosphere.\n\n🌡️ This keeps the planet warm—around 15°C on average.\n\nWithout it, Earth would be too cold to live on!\n\n👉 Causes of Extra Greenhouse Gases:\n\n🚗 Burning fossil fuels (coal, petrol, diesel)\n\n🏭 Factory and industrial emissions\n\n🔥 Deforestation (cutting trees)\n\n🐄 Agriculture (methane from cows)\n\n🌫️ Excessive use of electricity and transportation\n\n👉 Benefits of the Natural Greenhouse Effect:\n\n🌱 Keeps Earth warm enough for life\n\n💧 Maintains water in liquid form\n\n🌦️ Supports weather and climate systems\n\n❌ Problems with the Enhanced Greenhouse Effect (Global Warming):\n\n🌡️ Earth\u0027s temperature is rising (climate change)\n\n🧊 Melting glaciers and rising sea levels\n\n🔥 More heatwaves, wildfires, and droughts\n\n🌪️ Extreme weather events (storms, floods)\n\n🐧 Threat to animals, plants, and humans\n\n👉 Solutions to Reduce the Greenhouse Effect:\n✅ Use renewable energy (solar, wind, hydro)\n✅ Plant more trees (afforestation)\n✅ Reduce car and air travel – use public transport 🚲\n✅ Save electricity – turn off lights, use energy-efficient appliances\n✅ Recycle and reduce waste"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "reply_markup": {
+                "inline_keyboard": [
+                  [
+                    {
+                      "callback_data": "solarinfo",
+                      "text": "Solar Energy"
+                    },
+                    {
+                      "text": "Wind Energy",
+                      "callback_data": "windinfo"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "hydroinfo",
+                      "text": "Hydro Energy"
+                    },
+                    {
+                      "callback_data": "savinginfo",
+                      "text": "Energy Saving Tips"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "globalinfo",
+                      "text": "Global Warming"
+                    },
+                    {
+                      "text": "Green House Effect",
+                      "callback_data": "greenhouseinfo"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Climate Impacts",
+                      "callback_data": "climateinfo"
+                    },
+                    {
+                      "callback_data": "sustaininfo",
+                      "text": "Sustainability Goals"
+                    }
+                  ]
+                ]
+              },
+              "text": "Please choose a topic:"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

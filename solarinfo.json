@@ -1,0 +1,91 @@
+{
+  "id": "0e9d8341-1043-4b84-a985-d165e1463112",
+  "name": "solarinfo",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Absolutely! 🌞 Let’s dive into solar energy:\n\n👉 What is Solar Energy?\nSolar energy is the power we get from the sun’s light and heat. We use solar panels to capture this energy and turn it into electricity or thermal energy. It\u0027s one of the cleanest and most renewable energy sources on Earth!\n\n👉 Uses of Solar Energy:\n\n⚡ Generating electricity for homes and businesses\n\n💧 Heating water using solar heaters\n\n🍲 Cooking with solar cookers in rural areas\n\n💡 Powering streetlights and traffic systems\n\n🚜 Running irrigation pumps for farming\n\n🛰️ Even powering satellites in space!\n\n👉 Benefits of Solar Energy:\n\n🌿 It’s eco-friendly – no pollution at all\n\n☀️ Endless supply – the sun rises every day!\n\n💸 Helps save money on electricity bills\n\n🔧 Low maintenance after installation\n\n🏡 Perfect for remote or off-grid locations\n\n👉 Advantages:\n✅ Clean and renewable\n✅ Reduces carbon footprint\n✅ Quiet and reliable\n✅ Increases property value\n✅ Good for long-term savings\n\n👉 Disadvantages:\n❌ Doesn’t work at night or on cloudy days\n❌ High initial installation cost\n❌ Needs large area for big systems\n❌ Requires battery or backup system\n❌ Panel production can cause some pollution\n\n👉 Sources of Solar Energy:\n\nSolar Photovoltaic (PV): Converts sunlight into electricity\n\nSolar Thermal Systems: Uses sunlight to heat water or air\n\nConcentrated Solar Power (CSP): Uses mirrors to focus sunlight and generate steam\n\nPassive Solar: Building designs that use sunlight for heating naturally"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "reply_markup": {
+                "inline_keyboard": [
+                  [
+                    {
+                      "text": "Solar Energy",
+                      "callback_data": "solarinfo"
+                    },
+                    {
+                      "text": "Wind Energy",
+                      "callback_data": "windinfo"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "hydroinfo",
+                      "text": "Hydro Energy"
+                    },
+                    {
+                      "callback_data": "savinginfo",
+                      "text": "Energy Saving Tips"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "globalinfo",
+                      "text": "Global Warming"
+                    },
+                    {
+                      "text": "Green House Effect",
+                      "callback_data": "greenhouseinfo"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Climate Impacts",
+                      "callback_data": "climateinfo"
+                    },
+                    {
+                      "callback_data": "sustaininfo",
+                      "text": "Sustainability Goals"
+                    }
+                  ]
+                ]
+              },
+              "text": "Please choose a topic:"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

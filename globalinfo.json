@@ -1,0 +1,91 @@
+{
+  "id": "8a5984b9-2e7b-4907-a440-ac2c5a991f08",
+  "name": "globalinfo",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Sure! 🌍🔥 Let\u0027s talk about global warming—a serious issue that affects all of us.\n\n👉 What is Global Warming?\nGlobal warming means the gradual increase in Earth’s temperature due to extra greenhouse gases in the atmosphere. It’s like Earth getting a fever because of too much pollution!\n\n👉 What causes it?\nHere are the major human activities that cause global warming:\n\n🚗 Burning fossil fuels (petrol, diesel, coal) for cars, factories, electricity\n\n🏭 Industrial emissions and power plants\n\n🔥 Cutting trees (deforestation – trees absorb CO₂)\n\n🐄 Cattle farming (releases methane gas)\n\n🗑️ Waste burning and landfills\n\nThese actions increase greenhouse gases like CO₂, methane, and nitrous oxide — which trap heat in Earth’s atmosphere.\n\n🌡️ What are the effects of global warming?\n🧊 Melting glaciers and polar ice caps\n\n🌊 Rising sea levels — flooding coastal areas\n\n🔥 More heatwaves, droughts, and wildfires\n\n🌪️ Stronger storms and unusual weather\n\n🐧 Danger to wildlife and biodiversity\n\n🚰 Food and water shortages in some regions\n\n✅ What can we do to stop it?\nHere are some solutions we can all try:\n\n🌳 Plant more trees (they absorb CO₂)\n\n☀️ Use renewable energy (solar, wind, hydro)\n\n🚲 Walk, cycle, or use public transport\n\n💡 Save energy – turn off lights and appliances\n\n♻️ Reduce, reuse, and recycle waste\n\n🛍️ Avoid single-use plastic and shop eco-friendly"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "text": "Please choose a topic:",
+              "reply_markup": {
+                "inline_keyboard": [
+                  [
+                    {
+                      "callback_data": "solarinfo",
+                      "text": "Solar Energy"
+                    },
+                    {
+                      "callback_data": "windinfo",
+                      "text": "Wind Energy"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Hydro Energy",
+                      "callback_data": "hydroinfo"
+                    },
+                    {
+                      "callback_data": "savinginfo",
+                      "text": "Energy Saving Tips"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "globalinfo",
+                      "text": "Global Warming"
+                    },
+                    {
+                      "callback_data": "greenhouseinfo",
+                      "text": "Green House Effect"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "climateinfo",
+                      "text": "Climate Impacts"
+                    },
+                    {
+                      "text": "Sustainability Goals",
+                      "callback_data": "sustaininfo"
+                    }
+                  ]
+                ]
+              }
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

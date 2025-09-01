@@ -1,0 +1,91 @@
+{
+  "id": "1d3260b0-7b9d-4f67-94d1-613316e0773d",
+  "name": "climateinfo",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Great question! 🌍 Climate change means long-term shifts in temperature and weather patterns. These changes are mostly caused by global warming — and they have huge impacts on the Earth and everything living on it.\n\n🌡️ 1. Rising Temperatures\nAverage global temperatures are increasing.\n\nThis leads to heatwaves and longer summers.\n\n🔥 Example: Some places are getting so hot, it’s dangerous to go outside during the day!\n\n🧊 2. Melting Ice and Rising Sea Levels\nGlaciers and polar ice caps are melting rapidly.\n\nAs a result, sea levels rise, flooding coastal cities and islands.\n\n🏝️ Some small islands may disappear underwater!\n\n🌪️ 3. Extreme Weather Events\nMore storms, floods, cyclones, and wildfires are happening.\n\nWeather is becoming less predictable and more dangerous.\n\n⛈️ Some areas face heavy rain, while others suffer from droughts.\n\n🌾 4. Impact on Agriculture and Food\nCrops don’t grow well in extreme heat or floods.\n\nFarmers face problems like low crop yield and soil erosion.\n\nThis can lead to food shortages and higher prices.\n\n🐾 5. Harm to Animals and Plants\nMany species are losing their homes due to changing climates.\n\n🐧 Polar animals like penguins and polar bears are at risk.\n\n🐝 Some insects and plants are disappearing, affecting the entire food chain.\n\n💧 6. Water Scarcity\nLess rainfall and dried-up rivers mean less drinking water.\n\nSome areas may face water wars in the future!\n\n🧍 7. Health Problems\nHotter weather spreads diseases like dengue and malaria faster.\n\nPeople may suffer from dehydration, breathing problems, or heat strokes."
+          ],
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "reply_markup": {
+                "inline_keyboard": [
+                  [
+                    {
+                      "callback_data": "solarinfo",
+                      "text": "Solar Energy"
+                    },
+                    {
+                      "callback_data": "windinfo",
+                      "text": "Wind Energy"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Hydro Energy",
+                      "callback_data": "hydroinfo"
+                    },
+                    {
+                      "text": "Energy Saving Tips",
+                      "callback_data": "savinginfo"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Global Warming",
+                      "callback_data": "globalinfo"
+                    },
+                    {
+                      "text": "Green House Effect",
+                      "callback_data": "greenhouseinfo"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "climateinfo",
+                      "text": "Climate Impacts"
+                    },
+                    {
+                      "callback_data": "sustaininfo",
+                      "text": "Sustainability Goals"
+                    }
+                  ]
+                ]
+              },
+              "text": "Please choose a topic:"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

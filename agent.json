@@ -1,0 +1,29 @@
+{
+  "description": "",
+  "language": "en",
+  "shortDescription": "",
+  "examples": "",
+  "linkToDocs": "",
+  "displayName": "GreenChatBot",
+  "activeAssistantAgents": [
+    "smalltalk-domain-on"
+  ],
+  "disableInteractionLogs": false,
+  "disableStackdriverLogs": true,
+  "defaultTimezone": "Asia/Colombo",
+  "isPrivate": true,
+  "mlMinConfidence": 0.3,
+  "supportedLanguages": [],
+  "enableOnePlatformApi": true,
+  "onePlatformApiVersion": "v2beta1",
+  "secondaryKey": "a14a0fa295474edd8953a1809ca7f57b",
+  "analyzeQueryTextSentiment": true,
+  "enabledKnowledgeBaseNames": [
+    "projects/greenchatbot-hynk/knowledgeBases/ODA1MzM4OTEzNTQ0MTgyMTY5Nw",
+    "projects/greenchatbot-hynk/knowledgeBases/MTc0NzEyNjAzODEyMDM2NjA4MDE"
+  ],
+  "knowledgeServiceConfidenceAdjustment": 1.0,
+  "dialogBuilderMode": false,
+  "baseActionPackagesUrl": "",
+  "enableSpellCorrection": true
+}

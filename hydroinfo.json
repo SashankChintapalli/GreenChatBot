@@ -1,0 +1,91 @@
+{
+  "id": "0873fb29-cbe5-48d9-8d57-ab946b9f0e4f",
+  "name": "hydroinfo",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Of course! 💧 Let’s dive into **hydro energy**—one of the oldest and most powerful renewable energy sources.\n\n---\n\n**👉 What is Hydro Energy?**\nHydro energy (also called **hydropower**) is the energy produced from **moving water**. We use this energy to spin turbines that generate **electricity**. It’s clean, renewable, and widely used around the world.\n\n---\n\n**👉 Uses of Hydro Energy:**\n\n* ⚡ **Generating electricity** in hydroelectric power plants\n* 💧 **Pumping water** for drinking and irrigation\n* 🏞️ Used in **water mills** for grinding and mechanical work\n* 🌉 **Flood control** through dam regulation\n* 🧊 Powering **cooling systems** in industries\n\n---\n\n**👉 Benefits of Hydro Energy:**\n\n* 🌱 **No pollution** – it\u0027s a clean energy source\n* 🔁 **Renewable** – as long as rivers flow, energy is available\n* 💡 **Efficient** – can produce large amounts of power\n* 🚰 **Multipurpose use** – power, water storage, and flood control\n* ⚙️ **Long plant life** – dams and turbines can last decades\n\n---\n\n**👉 Advantages:**\n✅ Reliable and consistent energy supply\n✅ Supports grid stability and peak load demand\n✅ Reduces dependency on fossil fuels\n✅ Low greenhouse gas emissions\n✅ Suitable for large-scale power needs\n\n---\n\n**👉 Disadvantages:**\n❌ High **initial construction cost** (especially for dams)\n❌ Affects **aquatic life and river ecosystems**\n❌ Can lead to **displacement of people** (due to large reservoirs)\n❌ Limited to areas with **suitable water flow and elevation**\n❌ Risk of flooding if dams fail\n\n---\n\n**👉 Sources of Hydro Energy:**\nHydropower is generated from:\n\n* 🏞️ **Rivers and dams** – storing water and releasing it to spin turbines\n* 🌊 **Run-of-river systems** – use natural river flow without large dams\n* 🌀 **Pumped storage systems** – store energy by moving water between reservoirs\n* 🌐 **Tidal and wave energy** – (advanced form) using ocean movement"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "text": "Please choose a topic:",
+              "reply_markup": {
+                "inline_keyboard": [
+                  [
+                    {
+                      "callback_data": "solarinfo",
+                      "text": "Solar Energy"
+                    },
+                    {
+                      "text": "Wind Energy",
+                      "callback_data": "windinfo"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Hydro Energy",
+                      "callback_data": "hydroinfo"
+                    },
+                    {
+                      "callback_data": "savinginfo",
+                      "text": "Energy Saving Tips"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "globalinfo",
+                      "text": "Global Warming"
+                    },
+                    {
+                      "callback_data": "greenhouseinfo",
+                      "text": "Green House Effect"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Climate Impacts",
+                      "callback_data": "climateinfo"
+                    },
+                    {
+                      "text": "Sustainability Goals",
+                      "callback_data": "sustaininfo"
+                    }
+                  ]
+                ]
+              }
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

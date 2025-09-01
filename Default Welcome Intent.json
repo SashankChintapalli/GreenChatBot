@@ -1,0 +1,95 @@
+{
+  "id": "2cd718fe-6efd-4809-b850-46ca0e88d925",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "🌱 Welcome to GreenBot! 🌍\nYour friendly guide to a cleaner, greener future.\nDiscover the power of renewable energy, learn smart energy-saving tips, and explore how we can fight climate change together."
+          ],
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "text": "Please choose a topic:",
+              "reply_markup": {
+                "inline_keyboard": [
+                  [
+                    {
+                      "callback_data": "solarinfo",
+                      "text": "Solar Energy"
+                    },
+                    {
+                      "callback_data": "windinfo",
+                      "text": "Wind Energy"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "hydroinfo",
+                      "text": "Hydro Energy"
+                    },
+                    {
+                      "callback_data": "savinginfo",
+                      "text": "Energy Saving Tips"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "globalinfo",
+                      "text": "Global Warming"
+                    },
+                    {
+                      "callback_data": "greenhouseinfo",
+                      "text": "Green House Effect"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "climateinfo",
+                      "text": "Climate Impacts"
+                    },
+                    {
+                      "text": "Sustainability Goals",
+                      "callback_data": "sustaininfo"
+                    }
+                  ]
+                ]
+              }
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

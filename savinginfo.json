@@ -1,0 +1,92 @@
+{
+  "id": "c7a95d22-4837-43be-bae0-64b8cbdbce4b",
+  "name": "savinginfo",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Absolutely! 💡 Saving energy is good for the planet 🌍 and your pocket 💰! Here are some smart tips you can start using today:\n\n🏠 At Home:\n💡 Switch off lights and fans when not in use\n\n🔌 Unplug chargers \u0026 appliances when not needed (they still use power!)\n\n🌞 Use natural sunlight during the day\n\n🚿 Take shorter showers to save hot water\n\n❄️ Keep fridge doors closed tightly and don’t overload\n\n🧑‍💻 For Students:\n💻 Lower screen brightness on laptops and phones\n\n🔋 Use devices with power-saving mode\n\n🖨️ Print only when necessary – go digital when possible\n\n🚌 Walk, cycle, or carpool to school to save fuel\n\n📕 Study near windows during the day to avoid using lights\n\n🏫 In Schools:\n🏫 Use LED bulbs in classrooms\n\n🕒 Conduct energy audits to find wasteful areas\n\n🔁 Encourage recycling and eco-clubs\n\n🌳 Plant trees around school for natural cooling\n\n🚪 Keep doors \u0026 windows closed when ACs are on\n\n🧠 Smart Habits:\n♻️ Reuse and recycle materials to reduce energy used in making new ones\n\n🛒 Buy energy-efficient appliances (look for star ratings)\n\n🌡️ Set AC to 24–26°C to balance comfort and savings\n\n📦 Buy only what you need – making stuff uses energy too!",
+            "Every small step counts! 🌱 If everyone saves a little, together we save a LOT"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "reply_markup": {
+                "inline_keyboard": [
+                  [
+                    {
+                      "callback_data": "solarinfo",
+                      "text": "Solar Energy"
+                    },
+                    {
+                      "callback_data": "windinfo",
+                      "text": "Wind Energy"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "hydroinfo",
+                      "text": "Hydro Energy"
+                    },
+                    {
+                      "callback_data": "savinginfo",
+                      "text": "Energy Saving Tips"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "globalinfo",
+                      "text": "Global Warming"
+                    },
+                    {
+                      "text": "Green House Effect",
+                      "callback_data": "greenhouseinfo"
+                    }
+                  ],
+                  [
+                    {
+                      "callback_data": "climateinfo",
+                      "text": "Climate Impacts"
+                    },
+                    {
+                      "text": "Sustainability Goals",
+                      "callback_data": "sustaininfo"
+                    }
+                  ]
+                ]
+              },
+              "text": "Please choose a topic:"
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

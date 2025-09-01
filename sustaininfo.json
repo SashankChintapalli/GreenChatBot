@@ -1,0 +1,91 @@
+{
+  "id": "49be765d-f3c1-4d72-921d-cc3c74796c38",
+  "name": "sustaininfo",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "🟢 The 17 Sustainability Goals (SDGs):\nNo Poverty\n👉 End poverty in all its forms everywhere.\n\nZero Hunger\n👉 End hunger, achieve food security, improve nutrition, and promote sustainable agriculture.\n\nGood Health and Well-being\n👉 Ensure healthy lives and promote well-being for all at all ages.\n\nQuality Education\n👉 Ensure inclusive and equitable quality education and promote lifelong learning.\n\nGender Equality\n👉 Achieve gender equality and empower all women and girls.\n\nClean Water and Sanitation\n👉 Ensure availability and sustainable management of water and sanitation for all.\n\nAffordable and Clean Energy\n👉 Ensure access to affordable, reliable, sustainable, and modern energy.\n\nDecent Work and Economic Growth\n👉 Promote sustained, inclusive economic growth, full and productive employment.\n\nIndustry, Innovation, and Infrastructure\n👉 Build resilient infrastructure, promote inclusive industrialization, and foster innovation.\n\nReduced Inequalities\n👉 Reduce inequality within and among countries.\n\nSustainable Cities and Communities\n👉 Make cities inclusive, safe, resilient, and sustainable.\n\nResponsible Consumption and Production\n👉 Ensure sustainable consumption and production patterns.\n\nClimate Action\n👉 Take urgent action to combat climate change and its impacts.\n\nLife Below Water\n👉 Conserve and sustainably use oceans, seas, and marine resources.\n\nLife on Land\n👉 Protect, restore and promote sustainable use of terrestrial ecosystems.\n\nPeace, Justice, and Strong Institutions\n👉 Promote peaceful societies, provide access to justice, and build effective institutions.\n\nPartnerships for the Goals\n👉 Strengthen the means of implementation and revitalize the global partnership for sustainable development."
+          ],
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "telegram": {
+              "text": "Please choose a topic:",
+              "reply_markup": {
+                "inline_keyboard": [
+                  [
+                    {
+                      "text": "Solar Energy",
+                      "callback_data": "solarinfo"
+                    },
+                    {
+                      "callback_data": "windinfo",
+                      "text": "Wind Energy"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Hydro Energy",
+                      "callback_data": "hydroinfo"
+                    },
+                    {
+                      "callback_data": "savinginfo",
+                      "text": "Energy Saving Tips"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Global Warming",
+                      "callback_data": "globalinfo"
+                    },
+                    {
+                      "callback_data": "greenhouseinfo",
+                      "text": "Green House Effect"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Climate Impacts",
+                      "callback_data": "climateinfo"
+                    },
+                    {
+                      "text": "Sustainability Goals",
+                      "callback_data": "sustaininfo"
+                    }
+                  ]
+                ]
+              }
+            }
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
